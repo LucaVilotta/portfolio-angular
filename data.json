@@ -1,0 +1,86 @@
+{ 
+  "info": {
+  "nombre": "Luca Vilotta",
+
+  "especializaciones": "Programador • Desarrollador Web • Ingeniero en Sonido",
+
+  "sobreMi": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ad dignissimos suscipit illum quos? Quod illum blanditiis necessitatibus sapiente numquam?",
+
+  "contacto": {
+      "telefono": "+54-0343-5170859",
+      "mail":"lucavilotta@hotmail.com",
+      "instagram": "@lucavilotta"
+  },
+
+  "img": "https://www.pngarts.com/files/3/Avatar-PNG-Download-Image.png",
+  
+
+  "masInfo": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ad dignissimos suscipit illum quos? Quod illum blanditiis necessitatibus sapiente numquam?"
+},
+  "educacion": [{
+      "institucion": "Escuela Normal Superior JMT",
+      "titulo": "Estudios Secundarios"
+      },
+      {
+      "institucion": "Instuto Superior de Música",
+      "titulo": "Lic en Sonorización y Grabación"
+      },
+      {
+      "institucion": "Curso de programación",
+      "titulo": "Argentina programa 4ta edición"
+      }
+  ],
+  "experiencia": [{
+      "puesto":"Progrmador Autónomo",
+      "lugar":"Curso Argentina Programa (4ta edición)"
+  }],
+
+  "habilidades": [{
+      "campo":"Front-End",
+      "habilidad-1":"HTML",
+      "habilidad-2":"CSS",
+      "habilidad-3":"JavaScript",
+      "porcentaje-1":"40%",
+      "porcentaje-2":"40%",
+      "porcentaje-3":"40%"
+      },
+      {
+      "campo":"Back-End",
+      "habilidad-1":"Atom",
+      "habilidad-2":"Ángular",
+      "habilidad-3":"PHP",
+      "porcentaje-1":"40%",
+      "porcentaje-2":"40%",
+      "porcentaje-3":"40%"
+      },
+      {
+      "campo":"Herramientas",
+      "habilidad-1":"Github",
+      "habilidad-2":"VSC",
+      "habilidad-3":"Boostrap",
+      "porcentaje-1":"40%",
+      "porcentaje-2":"40%",
+      "porcentaje-3":"40%"
+      }   
+  ],
+  
+  "proyectos": [
+      {
+          "titulo": "Web de banda local",
+          "img": "#",
+          "descrpcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusantium impedit tenetur, dolorum nihil labore modi iusto, blanditiis voluptate odio velit. Beatae nisi, id laudantium necessitatibus veniam aliquid autem blanditiis dolorum officia ullam."
+      },
+
+      {
+          "titulo": "Web de banda local",
+          "img": "#",
+          "descrpcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusantium impedit tenetur, dolorum nihil labore modi iusto, blanditiis voluptate odio velit. Beatae nisi, id laudantium necessitatibus veniam aliquid autem blanditiis dolorum officia ullam."
+      },
+
+      {
+          "titulo": "Web de banda local",
+          "img": "#",
+          "descrpcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusantium impedit tenetur, dolorum nihil labore modi iusto, blanditiis voluptate odio velit. Beatae nisi, id laudantium necessitatibus veniam aliquid autem blanditiis dolorum officia ullam."
+      }
+  ]
+}

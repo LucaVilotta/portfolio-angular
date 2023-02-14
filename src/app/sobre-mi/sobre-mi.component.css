@@ -1,0 +1,166 @@
+/* Estilos generales */
+
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+p{
+    font-size: 14px;
+}
+
+
+/*Info solo*/
+#info{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+/*Contacto Info*/ 
+.banner-lateral h3, .educacion h4{
+    margin-bottom: 15px;
+    color: #0e182b;
+    font-size: 25px;
+    width: 100%;
+}
+/*Iconos sección info*/
+#info a{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#info a:before {
+    color: #2a4d7d;
+    font-size: 30px;
+    margin-right: 12px;    
+}
+/*Imagen seccion info*/
+#info img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 40px;
+}
+#info figure{
+    text-align: center;
+}
+/*Nombre y profesión*/
+.nombre-profesion{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 410px);
+    margin: 30px;
+    
+}
+.nombre-profesion h2{
+    font-size: 70px;
+}
+.nombre-profesion h3{
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.nombre-profesion h2, .nombre-profesion h3{
+    color: #2a4d7d;
+}
+/*Banner lateral sección info*/
+.banner-lateral{
+    margin: 30px 30px 30px 0;
+    width: 350px;
+    background-color: #dfe2ea;
+    padding: 30px;
+    border-radius: 50px;
+}
+/*educacion-experiencia*/
+.educacion-experiencia{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*Button*/
+button{
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #43819e;
+}
+
+/*Media responsive*/
+@media screen and (max-width: 1024px) {
+    p{
+        font-size: 12px;
+    }
+    #info{
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+    }
+    .banner-lateral{
+        margin: 0;
+        width: 250px;
+        padding: 20px;
+    }
+    .nombre-profesion{
+        width: calc(100% - 270px);
+        margin: 0 0 0 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sobre-mi p{
+        width: 98%;
+    }
+
+    #info h1{
+        margin-bottom: 30px;
+        font-size: 35px;
+    }
+
+   #info img{
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   } 
+
+    #info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 0;
+    }
+
+    .banner-lateral{
+        margin: 10px;
+        height: calc(100vh - 20px);
+        width: calc(100vw - 20px);
+    }
+
+    .educacion-experiencia{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .barra-ver{
+        display:none;
+    }
+
+    .nombre-profesion{
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+}

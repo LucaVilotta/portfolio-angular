@@ -1,0 +1,102 @@
+/* Estilos generales */
+
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+p{
+    font-size: 14px;
+}
+
+/*Sección proyecto*/
+#proyectos{
+    text-align: center;
+    padding: 150px 20px;
+    background: rgb(43,122,181);
+    background: radial-gradient(circle, rgba(43,122,181,1) 0%, rgba(45,76,108,1) 100%);
+    color: white;
+}
+#proyectos img{
+    width: 100%;
+    height: auto;
+}
+#proyectos h2{
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+#proyectos .conteiner-proyectos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#proyectos .conteiner-proyectos .proyecto-x{
+    padding: 30px;
+    width: calc((100% ) / 4);
+}
+/*Button*/
+#proyectos a{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(0, 102, 204);
+}
+
+/*Media responsive*/
+@media screen and (max-width: 1024px) {
+    p{
+        font-size: 12px;
+    }
+    /*Sección proyectos*/
+    #proyectos .conteiner-proyectos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #proyectos .conteiner-proyectos .proyecto-x {
+        width: calc((100% ) / 2);
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    /*Seccion proyectos*/
+    #proyectos p{
+        display: none;
+    }
+    #proyectos h2{
+        font-size: 45px;
+    }
+    #proyectos .conteiner-proyectos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    #proyectos .conteiner-proyectos .proyecto-x{
+        margin: 12px 0;
+        width: 100%;
+    }
+    /*Button*/
+    #proyectos button{
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.308);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        color: white;
+        background-color: rgb(0, 102, 204);
+    }
+}

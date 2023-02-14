@@ -1,0 +1,96 @@
+/* Estilos generales */
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+/*/Título main*/
+#titulo-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: rgb(43,122,181);
+    background: radial-gradient(circle, rgba(43,122,181,1) 0%, rgba(45,76,108,1) 100%);
+    font-family: 'Ubuntu', sans-serif;
+}
+.titulo-del-sitio{
+    font-size: 90px;
+    display: block;
+    line-height: 1;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.especializaciones{
+    font-size: 30px;
+    display: block;
+    line-height: 1;
+    color: #fff;
+    margin-top: 10px;
+}
+#titulo-main [class*="icon-"]{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    background: transparent;
+    transition: all 0.5s;
+}
+#titulo-main [class*="icon-"]:hover{
+    background: white;
+}
+#titulo-main [class*="icon-"]:before{
+    font-size: 40px;
+    color: aliceblue;
+}
+#titulo-main [class*="icon-"]:hover:before{
+    color: rgba(43,122,181,1);
+}
+.iconos-main{
+    display:flex;
+}
+#titulo-main ul{
+    display: flex;
+    margin: 30px auto;
+    padding: 0;
+}
+#titulo-main ul li {
+    margin: 0 20px;
+}
+#titulo-main ul li a{
+    font-size: 20px;
+    display: block;
+    line-height: 1;
+    color: #fff;
+}
+#titulo-main h1{
+    margin-bottom: 50px;
+}
+.cerrar-sesion{
+    font-size: 15px;
+    display: block;
+    line-height: 1;
+    color: #fff;
+}
+@media screen and (max-width: 767px) {
+    .titulo-del-sitio{
+        font-size: 60px;
+    }
+}
