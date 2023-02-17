@@ -7,6 +7,7 @@ import { PortfolioService } from '../servicios/portfolio.service';
   styleUrls: ['./titulo-main.component.css','./iconos.css']
 })
 export class TituloMainComponent {
+  
   constructor(private datosPortfolio:PortfolioService) {}
   miPortfolio:any;
   ngOnInit(): void {

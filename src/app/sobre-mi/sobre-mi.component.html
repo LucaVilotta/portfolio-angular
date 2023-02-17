@@ -21,9 +21,7 @@
             <hr size="2px" color="black">
             <h3>Contacto <button>✏️</button></h3>
             <ul>
-                <li><a href="#" class="icon-wsp"><span>+54-0343-5170859</span></a></li>
-                <li><a href="#" class="icon-contact"><span>lucavilotta@hotmail.com</span></a></li>
-                <li><a href="#" class="icon-instagram"><span>@lucavilotta</span></a></li>
+                <li *ngFor="let contacto of conctactoList"><a href="#" class={{contacto.icon}}><span>{{contacto.medio}}</span></a></li>
             </ul>
             <hr size="2px" color="black">
             <span class="mas-info"><h3>+ Más Info <button>✏️</button></h3>

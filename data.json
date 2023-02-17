@@ -6,11 +6,20 @@
 
   "sobreMi": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ad dignissimos suscipit illum quos? Quod illum blanditiis necessitatibus sapiente numquam?",
 
-  "contacto": {
-      "telefono": "+54-0343-5170859",
-      "mail":"lucavilotta@hotmail.com",
-      "instagram": "@lucavilotta"
-  },
+  "contacto": [
+    {
+        "icon":"icon-wsp",
+        "medio": "+54-0343-5170859"
+    },
+    {
+        "icon":"icon-contact",
+        "medio":"lucavilotta@hotmail.com"
+    },
+    {
+        "icon":"icon-instagram",
+        "medio": "@lucavilotta"
+    }
+  ],
 
   "img": "https://www.pngarts.com/files/3/Avatar-PNG-Download-Image.png",
   
