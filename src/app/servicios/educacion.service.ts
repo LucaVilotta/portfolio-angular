@@ -5,13 +5,13 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class PortfolioService {
+export class EducacionService {
 
   constructor(private http:HttpClient) { }
 
-  server = "http://localhost:3000/info";
+  serverEducacion = "http://localhost:3000/eduacion";
 
-  obtenerDatos():Observable<any>{
-    return this.http.get(this.server)
+  obtenerDatosEducacion():Observable<any>{
+    return this.http.get(this.serverEducacion)
   }
 }
