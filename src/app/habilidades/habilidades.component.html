@@ -11,53 +11,23 @@
 </head>
 <body>
     <div class="educacion">
-        <h4>Habilidades <button>✏️</button></h4>
+        <h4>Habilidades <button class="icon-editar"></button></h4>
         <div class="container-habilidades" id="habilidades">
-            <div class="skills-frontEnd">
-                <h4>Front-End</h4>
-                <h6>HTML</h6>
-                <div class="barra">
-                    <div class="progreso" style="--w:40%"></div>
+                <div class="skills-backEnd" *ngFor="let habilidades of misHabilidades">
+                    <h4>{{habilidades.campo}}</h4>
+                    <h6>{{habilidades.habilidad1}}</h6>
+                    <div class="barra">
+                        <div class="progreso" [style]="habilidades.porcentaje1"></div>
+                    </div>
+                    <h6>{{habilidades.habilidad2}}</h6>
+                    <div class="barra">
+                        <div class="progreso" [style]="habilidades.porcentaje2"></div>
+                    </div>
+                    <h6>{{habilidades.habilidad3}}</h6>
+                    <div class="barra">
+                        <div class="progreso" [style]="habilidades.porcentaje3"></div>
+                    </div>
                 </div>
-                <h6>CSS</h6>
-                <div class="barra">
-                    <div class="progreso" style="--w:40%"></div>
-                </div>
-                <h6>JavaScript</h6>
-                <div class="barra">
-                    <div class="progreso" style="--w:40%"></div>
-                </div>
-            </div>
-            <div class="skills-backEnd">
-                <h4>Back-End</h4>
-                <h6>Atom</h6>
-                <div class="barra">
-                    <div class="progreso" style="--w:40%"></div>
-                </div>
-                <h6>Angular</h6>
-                <div class="barra">
-                    <div class="progreso" style="--w:40%"></div>
-                </div>
-                <h6>PHP</h6>
-                <div class="barra">
-                    <div class="progreso" style="--w:40%"></div>
-                </div>
-            </div>
-            <div class="skills-herramientas">
-                <h4>Herramientas</h4>
-                <h6>GitHub</h6>
-                <div class="barra">
-                    <div class="progreso" style="--w:40%"></div>
-                </div>
-                <h6>Visual Studio Code</h6>
-                <div class="barra">
-                    <div class="progreso" style="--w:40%"></div>
-                </div>
-                <h6>Boostrap</h6>
-                <div class="barra">
-                    <div class="progreso" style="--w:40%"></div>
-                </div>
-            </div>
         </div>
     </div>
 </body>

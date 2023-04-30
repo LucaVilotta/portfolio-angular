@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-borrar:before {
+  content: "\e906";
+}
+.icon-editar:before {
+  content: "\e907";
+}
+.icon-agregar:before {
+  content: "\e908";
+}
 .icon-instagram:before {
   content: "\e900";
 }

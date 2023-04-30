@@ -13,37 +13,13 @@
     <section id="proyectos">
         <h2>PROYECTOS</h2>
         <div class="conteiner-proyectos">
-            <div class="proyecto-x">
-                <h3>Web de banda local</h3>
+            <div class="proyecto-x" *ngFor="let proyectos of misProyectos">
+                <h3>{{proyectos.titulo}}</h3>
                 <figure>
-                    <img src="assets\png\proyecto-2.png" alt="pro-1">
+                    <img [src]="proyectos.img" alt="pro-1">
                 </figure>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusantium impedit tenetur, dolorum nihil labore modi iusto, blanditiis voluptate odio velit. Beatae nisi, id laudantium necessitatibus veniam aliquid autem blanditiis dolorum officia ullam.</p>
-                <a href="#">Ir al sitio</a>
-            </div>
-            <div class="proyecto-x">
-                <h3>Web de banda local</h3>
-                <figure>
-                    <img src="assets\png\proyecto-2.png" alt="pro-1">
-                </figure>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusantium impedit tenetur, dolorum nihil labore modi iusto, blanditiis voluptate odio velit. Beatae nisi, id laudantium necessitatibus veniam aliquid autem blanditiis dolorum officia ullam.</p>
-                <a href="#">Ir al sitio</a>
-            </div>
-            <div class="proyecto-x">
-                <h3>Web de banda local</h3>
-                <figure>
-                    <img src="assets\png\proyecto-2.png" alt="pro-1">
-                </figure>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusantium impedit tenetur, dolorum nihil labore modi iusto, blanditiis voluptate odio velit. Beatae nisi, id laudantium necessitatibus veniam aliquid autem blanditiis dolorum officia ullam.</p>
-                <a href="#">Ir al sitio</a>
-            </div>
-            <div class="proyecto-x">
-                <h3>Web de banda local</h3>
-                <figure>
-                    <img src="assets\png\proyecto-2.png" alt="pro-1">
-                </figure>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusantium impedit tenetur, dolorum nihil labore modi iusto, blanditiis voluptate odio velit. Beatae nisi, id laudantium necessitatibus veniam aliquid autem blanditiis dolorum officia ullam.</p>
-                <a href="#">Ir al sitio</a>
+                <p>{{proyectos.descripcion}}</p>
+                <a [href]="proyectos.enlace">Ir al sitio</a>
             </div>
         </div>
     </section>

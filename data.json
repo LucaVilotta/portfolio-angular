@@ -4,6 +4,8 @@
 
   "especializaciones": "Programador • Desarrollador Web • Ingeniero en Sonido",
 
+  "especializacionMain": "Programador Full Stack Jr",
+
   "sobreMi": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ad dignissimos suscipit illum quos? Quod illum blanditiis necessitatibus sapiente numquam?",
 
   "contacto": [
@@ -45,51 +47,57 @@
   }],
 
   "habilidades": [{
+      "div":"skills-frontEnd",
       "campo":"Front-End",
-      "habilidad-1":"HTML",
-      "habilidad-2":"CSS",
-      "habilidad-3":"JavaScript",
-      "porcentaje-1":"40%",
-      "porcentaje-2":"40%",
-      "porcentaje-3":"40%"
+      "habilidad1":"HTML",
+      "habilidad2":"CSS",
+      "habilidad3":"JavaScript",
+      "porcentaje1":"--w:80%",
+      "porcentaje2":"--w:40%",
+      "porcentaje3":"--w:40%"
       },
       {
+      "div":"skills-backEnd",
       "campo":"Back-End",
-      "habilidad-1":"Atom",
-      "habilidad-2":"Ángular",
-      "habilidad-3":"PHP",
-      "porcentaje-1":"40%",
-      "porcentaje-2":"40%",
-      "porcentaje-3":"40%"
+      "habilidad1":"Atom",
+      "habilidad2":"Ángular",
+      "habilidad3":"PHP",
+      "porcentaje1":"--w:40%",
+      "porcentaje2":"--w:57.3%",
+      "porcentaje3":"--w:40%"
       },
       {
+      "div":"skills-herramientas",
       "campo":"Herramientas",
-      "habilidad-1":"Github",
-      "habilidad-2":"VSC",
-      "habilidad-3":"Boostrap",
-      "porcentaje-1":"40%",
-      "porcentaje-2":"40%",
-      "porcentaje-3":"40%"
+      "habilidad1":"Github",
+      "habilidad2":"VSC",
+      "habilidad3":"Boostrap",
+      "porcentaje1":"--w:40%",
+      "porcentaje2":"--w:40%",
+      "porcentaje3":"--w:100%"
       }   
   ],
   
   "proyectos": [
       {
           "titulo": "Web de banda local",
-          "img": "#",
-          "descrpcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusantium impedit tenetur, dolorum nihil labore modi iusto, blanditiis voluptate odio velit. Beatae nisi, id laudantium necessitatibus veniam aliquid autem blanditiis dolorum officia ullam."
+          "img": "assets/png/proyecto-2.png",
+          "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusantium impedit tenetur, dolorum nihil labore modi iusto, blanditiis voluptate odio velit. Beatae nisi, id laudantium necessitatibus veniam aliquid autem blanditiis dolorum officia ullam.",
+          "enlace":"#"
       },
 
       {
           "titulo": "Web de banda local",
-          "img": "#",
-          "descrpcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusantium impedit tenetur, dolorum nihil labore modi iusto, blanditiis voluptate odio velit. Beatae nisi, id laudantium necessitatibus veniam aliquid autem blanditiis dolorum officia ullam."
+          "img": "assets/png/proyecto-2.png",
+          "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusantium impedit tenetur, dolorum nihil labore modi iusto, blanditiis voluptate odio velit. Beatae nisi, id laudantium necessitatibus veniam aliquid autem blanditiis dolorum officia ullam.",
+          "enlace":"#"
       },
 
       {
           "titulo": "Web de banda local",
-          "img": "#",
-          "descrpcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusantium impedit tenetur, dolorum nihil labore modi iusto, blanditiis voluptate odio velit. Beatae nisi, id laudantium necessitatibus veniam aliquid autem blanditiis dolorum officia ullam."
+          "img": "assets/png/proyecto-2.png",
+          "descripcion":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusantium impedit tenetur, dolorum nihil labore modi iusto, blanditiis voluptate odio velit. Beatae nisi, id laudantium necessitatibus veniam aliquid autem blanditiis dolorum officia ullam.",
+          "enlace":"#"
       }
   ]
 }
