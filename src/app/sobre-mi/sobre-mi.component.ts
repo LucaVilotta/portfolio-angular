@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { PortfolioService } from '../servicios/portfolio.service';
 import { EducacionService } from '../servicios/educacion.service';
 import { ExperienciaService } from '../servicios/experiencia.service';
+import { persona } from '../model/persona.model';
 
 @Component({
   selector: 'app-sobre-mi',
@@ -11,14 +12,14 @@ import { ExperienciaService } from '../servicios/experiencia.service';
 export class SobreMiComponent {
 
   constructor(private datosPortfolio:PortfolioService, private datosEducacion:EducacionService, private datosExperiencia:ExperienciaService) {}
-  miPortfolio:any;
+  persona: persona = new persona("","","","","");
   conctactoList:any;
   miEducacion:any;
   miExperiencia:any;
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data => {
       console.log(data)
-      this.miPortfolio=data;
+      this.persona=data;
       this.conctactoList=data.contacto;
     });
 
