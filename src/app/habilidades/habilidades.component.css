@@ -119,6 +119,7 @@ button{
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+    margin: 2px; /* ESTE MARGEN SE LO AGREGUÉ YO PARA QUE QUEDE MAS PROLIJO */
   
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;

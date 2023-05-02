@@ -11,11 +11,11 @@
 </head>
 <body>
     <div class="educacion">
-        <h4>Habilidades <button class="icon-editar"></button></h4>
+        <h4>Habilidades <button class="icon-agregar"></button></h4>
         <div class="container-habilidades" id="habilidades">
             <h4></h4> <!--Acá va el campo de la habilidad-->
                 <div class="skills-backEnd" *ngFor="let habilidades of misHabilidades">
-                    <h6>{{habilidades.habilidad}}</h6>
+                    <h6>{{habilidades.habilidad}} <button class="icon-editar"></button><button class="icon-borrar"></button></h6> 
                     <div class="barra">
                         <div class="progreso" [style]="habilidades.porcentaje"></div>
                     </div>

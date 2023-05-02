@@ -9,6 +9,8 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { PortfolioService } from './servicios/portfolio.service';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     TituloMainComponent,
     ProyectosComponent,
     HabilidadesComponent,
+    HomeComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule, 
