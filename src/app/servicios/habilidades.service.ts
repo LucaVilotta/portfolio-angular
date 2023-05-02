@@ -9,7 +9,7 @@ export class HabilidadesService {
 
   constructor(private http:HttpClient) { }
 
-  serverHabilidades = "http://localhost:3000/habilidades";
+  serverHabilidades = "http://localhost:8080/habilidad/traer";
 
   obtenerDatosHabilidades():Observable<any>{
     return this.http.get(this.serverHabilidades)

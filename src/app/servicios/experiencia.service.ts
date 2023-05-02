@@ -9,7 +9,7 @@ export class ExperienciaService {
 
   constructor(private http:HttpClient) { }
 
-  serverExperiencia = "http://localhost:3000/experiencia";
+  serverExperiencia = "http://localhost:8080/experiencia/traer";
 
   obtenerDatosExperiencia():Observable<any>{
     return this.http.get(this.serverExperiencia)

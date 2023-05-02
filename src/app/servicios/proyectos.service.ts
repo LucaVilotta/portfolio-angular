@@ -9,7 +9,7 @@ export class ProyectosService {
 
   constructor(private http:HttpClient) { }
   
-  serverProyectos="http://localhost:3000/proyectos"
+  serverProyectos="http://localhost:8080/proyecto/traer"
 
   obtenerDatosProyectos():Observable<any>{
     return this.http.get(this.serverProyectos)

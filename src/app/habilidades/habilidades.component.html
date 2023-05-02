@@ -13,19 +13,11 @@
     <div class="educacion">
         <h4>Habilidades <button class="icon-editar"></button></h4>
         <div class="container-habilidades" id="habilidades">
+            <h4></h4> <!--Acá va el campo de la habilidad-->
                 <div class="skills-backEnd" *ngFor="let habilidades of misHabilidades">
-                    <h4>{{habilidades.campo}}</h4>
-                    <h6>{{habilidades.habilidad1}}</h6>
+                    <h6>{{habilidades.habilidad}}</h6>
                     <div class="barra">
-                        <div class="progreso" [style]="habilidades.porcentaje1"></div>
-                    </div>
-                    <h6>{{habilidades.habilidad2}}</h6>
-                    <div class="barra">
-                        <div class="progreso" [style]="habilidades.porcentaje2"></div>
-                    </div>
-                    <h6>{{habilidades.habilidad3}}</h6>
-                    <div class="barra">
-                        <div class="progreso" [style]="habilidades.porcentaje3"></div>
+                        <div class="progreso" [style]="habilidades.porcentaje"></div>
                     </div>
                 </div>
         </div>
