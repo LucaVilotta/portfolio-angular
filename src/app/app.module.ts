@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModuleTsModule } from './app-routing.module.ts/app-routing.module.ts.module';
 
+
 import { AppComponent } from './app.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { TituloMainComponent } from './titulo-main/titulo-main.component';
@@ -25,7 +26,8 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule, 
     HttpClientModule,
-    AppRoutingModuleTsModule
+    AppRoutingModuleTsModule,
+
   ],
   providers: [PortfolioService],
   bootstrap: [AppComponent]
