@@ -27,7 +27,8 @@
             <li><a href="#proyectos">Proyectos</a></li>
         </ul>
 
-        <a href="/login" class="cerrar-sesion">Cerrar Sesión</a>
+        <button type="button" (click)="login()" *ngIf="!isLogged">Ingresar</button>
+        <button type="button" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</button>
     </section>
     
 </body>

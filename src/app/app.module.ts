@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModuleTsModule } from './app-routing.module.ts/app-routing.module.ts.module';
 
@@ -12,6 +13,7 @@ import { PortfolioService } from './servicios/portfolio.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { interceptorProvider } from './servicios/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -27,9 +29,10 @@ import { LoginComponent } from './login/login.component';
     BrowserModule, 
     HttpClientModule,
     AppRoutingModuleTsModule,
+    FormsModule,
 
   ],
-  providers: [PortfolioService],
+  providers: [PortfolioService, interceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

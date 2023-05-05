@@ -25,6 +25,17 @@ li{
     background: radial-gradient(circle, rgba(43,122,181,1) 0%, rgba(45,76,108,1) 100%);
     font-family: 'Ubuntu', sans-serif;
 }
+/*Button*/
+#titulo-main button{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(36, 119, 202);
+}
 .titulo-del-sitio{
     font-size: 90px;
     display: block;

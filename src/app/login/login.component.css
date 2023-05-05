@@ -60,7 +60,7 @@ body{
     font-size: 12px;
 }
 
-.login-box form a{
+.login-box form button{
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -74,13 +74,13 @@ body{
     letter-spacing: 4px;
 }
 
-.login-box form a:hover{
+.login-box form button:hover{
     background-color: rgb(84, 181, 255);
     color: #fff;
     border-radius: 5px;
 }
 
-.login-box a span{
+.login-box button span{
     position: absolute;
     display: block;
 }
