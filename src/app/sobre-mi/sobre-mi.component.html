@@ -16,15 +16,15 @@
             <figure>
                 <img [src]= "persona.img" alt="Avatar" width="10%" style="border-radius:50%">
             </figure>
-            <h3>Sobre mi <button class="icon-editar"></button></h3>
+            <h3>Sobre mi <button class="icon-editar" *ngIf="isLogged"></button></h3>
             <p>{{persona.sobreMi}}</p>
             <hr size="2px" color="black">
-            <h3>Contacto <button class="icon-editar"></button></h3>
+            <h3>Contacto <button class="icon-editar" *ngIf="isLogged"></button></h3>
             <ul>
                 <li *ngFor="let contacto of conctactoList"><a href="#" class={{contacto.icon}}><span>{{contacto.medio}}</span></a></li>
             </ul>
             <hr size="2px" color="black">
-            <span class="mas-info"><h3>+ Más Info <button class="icon-editar"></button></h3>
+            <span class="mas-info"><h3>+ Más Info <button class="icon-editar" *ngIf="isLogged"></button></h3>
             <p></p></span> <!--Acá va la sección "más info que todavía no cargué en el back"-->
         </div>
         <div class="nombre-profesion">
@@ -32,20 +32,20 @@
             <h3>{{persona.especializacion}}</h3>
             <div class="educacion-experiencia">
                 <div class="educacion">
-                    <h4>Educación  <button class="icon-agregar"></button></h4>
+                    <h4>Educación  <button class="icon-agregar" *ngIf="isLogged"></button></h4>
                     <ul>
                         <li *ngFor="let formacion of miEducacion">
-                            <p> <b>{{formacion.institucion}} <button class="icon-borrar"></button> <button class="icon-editar"></button></b>
+                            <p> <b>{{formacion.institucion}} <button class="icon-borrar" *ngIf="isLogged"></button> <button class="icon-editar" *ngIf="isLogged"></button></b>
                                 <br>{{formacion.titulo}}
                             </p></li>
                     </ul>
                 </div>
                 <div style="border-left:1px solid #c8c9ca;height:200px; margin:0 20px" class="barra-ver"></div>
                 <div class="educacion">
-                    <h4>Experiencia <button class="icon-agregar"></button></h4>
+                    <h4>Experiencia <button class="icon-agregar" *ngIf="isLogged"></button></h4>
                     <ul>
                         <li *ngFor="let experiencia of miExperiencia">
-                            <p> <b>{{experiencia.puesto}} <button class="icon-borrar"></button> <button class="icon-editar"></button></b>
+                            <p> <b>{{experiencia.puesto}} <button class="icon-borrar" *ngIf="isLogged"></button> <button class="icon-editar" *ngIf="isLogged"></button></b>
                                 <br>{{experiencia.lugar}}
                             </p></li>
                     </ul>

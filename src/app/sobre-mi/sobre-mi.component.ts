@@ -3,6 +3,8 @@ import { PortfolioService } from '../servicios/portfolio.service';
 import { EducacionService } from '../servicios/educacion.service';
 import { ExperienciaService } from '../servicios/experiencia.service';
 import { persona } from '../model/persona.model';
+import { Router } from '@angular/router';
+import { TokenService } from '../servicios/token.service';
 
 @Component({
   selector: 'app-sobre-mi',
@@ -11,12 +13,23 @@ import { persona } from '../model/persona.model';
 })
 export class SobreMiComponent {
 
-  constructor(private datosPortfolio:PortfolioService, private datosEducacion:EducacionService, private datosExperiencia:ExperienciaService) {}
+  isLogged =  false;
+
+  constructor(private datosPortfolio:PortfolioService, private datosEducacion:EducacionService, private datosExperiencia:ExperienciaService, private router:Router, private tokenService: TokenService) {}
   persona: persona = new persona("","","","","");
   conctactoList:any;
   miEducacion:any;
   miExperiencia:any;
+
+
   ngOnInit(): void {
+
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+    }else{
+      this.isLogged = false;
+    }
+
     this.datosPortfolio.obtenerDatos().subscribe(data => {
       console.log(data)
       this.persona=data;
@@ -33,4 +46,15 @@ export class SobreMiComponent {
       this.miExperiencia=data;
   });
 }
+
+onLogOut(): void {
+  this.tokenService.logOut();
+  window.location.reload();
+}
+
+login(){
+  this.router.navigate(["/login"]);
+}
+
+
 }
